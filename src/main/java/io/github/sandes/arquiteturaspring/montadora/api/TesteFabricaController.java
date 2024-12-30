@@ -16,7 +16,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class TesteFabricaController {
 
     @Autowired
-    @Qualifier("motorTurbo") //injetando tipos específicos de beans defiinidos na classe de configuração (montadoraConfiguration)
+    @Eletrico //anotation criada para subbistituir o qualifier
+//    @Qualifier("motorTurbo") //injetando tipos específicos de beans defiinidos na classe de configuração (montadoraConfiguration)
     private Motor motor;
 
     @PostMapping
